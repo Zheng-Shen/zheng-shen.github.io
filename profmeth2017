@@ -1,0 +1,72 @@
+<html>
+	
+	<head>
+		<!—[if lt IE 7]>
+		<link rel="stylesheet" type="text/css" href="ie6.css" />
+		<!-[endif]—>
+		<title>Zheng Shen</title>
+		<link rel="stylesheet" type="text/css" href="zhs11004.css">
+		<meta charset="UTF-8" />
+		<!--meta name="viewport" content="width=device-width" /-->
+		<meta name="keywords" content="Zheng Shen, uconn, linguistics, linguist, frankfurt">
+		<meta name="descripition" content="Zheng Shen">
+		<meta name="author" content="Zheng Shen">
+		
+		<!--google analystics-->
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39271824-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+	</script>
+	<!--google analystics-->
+	
+	<script type="text/javascript">
+		<!--
+		function toggle_visibility(id) {
+		var e = document.getElementById(id);
+		if(e.style.display == 'block')
+		e.style.display = 'none';
+		else
+		e.style.display = 'block';
+		}
+//-->
+</script>
+	
+	</head>
+	
+	<body>
+		<div class="container">
+			<div id="title">
+				Zheng Shen<!--span style="font-family:'HelveticaNeue-UltraLight'; float:right; font-size:23px;">Linguistics student at UConn</!span-->
+				<br>
+			</div>		
+		<div id="menu">
+		<ul>
+		<li class="page_item page-item-1 "><a href="index.html">About</a></li>
+		<li class="page_item page-item-2"><a href="projects.html">Projects</a></li>
+		<li class="page_item page-item-3 "><a href="papers.html">Papers</a></li>
+		<li class="page_item page-item-4 "><a href="presentations.html">Presentations</a></li>
+		<li class="page_item page-item-5 current_page_item"><a href="teaching.html">Teaching</a></li>
+		<li class="page_item page-item-6"><a href="cv.html">CV</a></li>
+		</ul>
+		</div>	
+			<br>
+      1. <a href="teaching/2017_GK_profmeth" target="_blank">conferences</a>
+      <br>
+      2. papers
+      <br>
+      3. summer school
+      <br>
+      4. poster
+      <br>
+	</body>
+	
+	</html>
