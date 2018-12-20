@@ -29,6 +29,8 @@
         <Node Type="5" LinkName="">./zhs11004.css</Node>
     </ProjectTreeFirstLevel>
     <!---->
-    <ShowedFiles />
+    <ShowedFiles>
+        <ShowedFileEditor1 FirstVisibleLine="58" CursorPosition="2357">./index.html</ShowedFileEditor1>
+    </ShowedFiles>
     <!---->
 </WebEditorProject>
