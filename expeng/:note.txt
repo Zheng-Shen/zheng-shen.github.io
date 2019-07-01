@@ -1,0 +1,1 @@
+SM: two prosody possibilities for DS sentences. 1. focus on 'or John' in "you or John" which indicates that it's john that is more likely to be true for the sentence, compared to 'you'. 2. neutral prosody which does not have such a bias effect.
