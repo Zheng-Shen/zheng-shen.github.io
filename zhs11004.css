@@ -23,7 +23,7 @@ body.light {
 
 body.dark {
 	--bg: rgb(36,36,36);
-	--text: rgb(230, 230, 230);
+	--text: rgb(200, 200, 200);
 	--link: rgb(128, 154, 186);
 }
 
