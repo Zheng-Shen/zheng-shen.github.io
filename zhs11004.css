@@ -14,15 +14,16 @@ hr {
 	vertical-align: top;
 }
 
-body.dark {
+body.light {
 	--bg: rgb(255, 255, 255);
 	--text: black;
 	--link: rgb(15, 93, 189);
+	--menulink: #3a3a3a
 }
 
-body.light {
-	--bg: black;
-	--text: rgb(255, 255, 255);
+body.dark {
+	--bg: rgb(36,36,36);
+	--text: rgb(230, 230, 230);
 	--link: rgb(128, 154, 186);
 }
 
@@ -117,7 +118,7 @@ table, th, td {
 }
 
 #menu a {
-	color: #3a3a3a;;
+	color:var(--menulink);
 	white-space: nowrap;
 }
 
