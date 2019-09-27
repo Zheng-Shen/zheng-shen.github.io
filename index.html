@@ -53,6 +53,22 @@
 	</head>
 	
 	<body>
+	  <script>
+    ;(function() {
+      window.__setPreferredTheme = function(newTheme) {
+        window.__theme = newTheme
+        document.body.className = newTheme
+      }
+
+      let darkQuery = window.matchMedia("(prefers-color-scheme: dark)")
+
+      darkQuery.addListener(function(e) {
+        window.__setPreferredTheme(e.matches ? "dark" : "light")
+      })
+
+      window.__setPreferredTheme(darkQuery.matches ? "dark" : "light")
+    })()
+  </script>
 		<div class="container">
 		<div id="title">
 				Zheng Shen<!--span style="font-family:'HelveticaNeue-UltraLight'; float:right; font-size:23px;">Linguistics student at UConn</!span-->

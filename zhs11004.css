@@ -1,7 +1,13 @@
-a:link {text-decoration:none;color:rgb(0,47,167)}    /* unvisited link */
-a:visited {text-decoration:none;color:rgb(0,47,167)} /* visited link */
+/*a:link {text-decoration:none;color:rgb(0,47,167)}    /* unvisited link */
+/*a:visited {text-decoration:none;color:rgb(0,47,167)} /* visited link */
 a:hover {text-decoration:underline;}   /* mouse over link */
 a:active {text-decoration:underline;}  /* selected link */
+
+a	{
+	text-decoration:none;
+	color: var(--link);
+}
+
 
 hr {
 	color:#444444;
@@ -9,7 +15,21 @@ hr {
 	vertical-align: top;
 }
 
+body.dark {
+  --bg: rgb(255, 255, 255);
+  --text: black;
+  --link: rgb(15, 93, 189);
+}
+
+body.light {
+  --bg: black;
+  --text: rgb(255, 255, 255);
+  --link: rgb(128, 154, 186);
+}
+
 body {	
+  	background-color: var(--bg);
+  	color: var(--text);
 	letter-spacing: 0.05em;
 	background-color: rgb(255, 255, 255);
 	font-family:'HelveticaNeue-Light', "Helvetica Neue Light", "Helvetica Neue", 'Helvetica-light', Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -72,7 +92,6 @@ table, th, td {
 	margin-top: 15px;
 	padding: 6px 0 0;
 }
-
 
 #menu ul{
 	margin:0;
