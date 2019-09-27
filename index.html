@@ -4,6 +4,11 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125955770-1"></script>
 <script>
+document.querySelector("#toggle").addEventListener("click", () => {
+  window.__setPreferredTheme(
+    document.body.className === "light" ? "dark" : "light")
+</script>	
+<script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -54,22 +59,21 @@
 	
 	<body class="dark">
 	  <script>
-    ;(function() {
+		;(function() {
+			let preferredTheme
+			
+			try {
+				preferredTheme = localStorage.getItem("theme")
+			} catch (err) {}
     
-    let preferredTheme
-
-	try {
-  	preferredTheme = localStorage.getItem("theme")
-	} catch (err) {}
-    
-      window.__setPreferredTheme = function(newTheme) {
-        window.__theme = newTheme
-        document.body.className = newTheme
+			window.__setPreferredTheme = function(newTheme) {
+				window.__theme = newTheme
+				document.body.className = newTheme
         
-        try {
-    localStorage.setItem("theme", newTheme)
-  } catch (err) {}
-      }
+				try {
+					localStorage.setItem("theme", newTheme)
+				} catch (err) {}
+			}
 
       let darkQuery = window.matchMedia("(prefers-color-scheme: dark)")
 
@@ -80,18 +84,13 @@
 		window.__setPreferredTheme(
         preferredTheme || (darkQuery.matches ? "dark" : "light")
     	)
-    	
-    	document.querySelector("#toggle").addEventListener("click", () => {
-  window.__setPreferredTheme(
-    document.body.className === "light" ? "dark" : "light"
-  )
-})
+	})
   </script>
 		<div class="container">
 		<div id="title">
 				Zheng Shen<!--span style="font-family:'HelveticaNeue-UltraLight'; float:right; font-size:23px;">Linguistics student at UConn</!span-->
 				<span ><button id="toggle">Theme</button></span>
-				<br>
+				<br>				
 		</div>
 		<div id="menu">
 		<ul>

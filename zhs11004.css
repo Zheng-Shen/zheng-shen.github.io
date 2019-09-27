@@ -15,15 +15,15 @@ hr {
 }
 
 body.dark {
-  --bg: rgb(255, 255, 255);
-  --text: black;
-  --link: rgb(15, 93, 189);
+	--bg: rgb(255, 255, 255);
+	--text: black;
+	--link: rgb(15, 93, 189);
 }
 
 body.light {
-  --bg: black;
-  --text: rgb(255, 255, 255);
-  --link: rgb(128, 154, 186);
+	--bg: black;
+	--text: rgb(255, 255, 255);
+	--link: rgb(128, 154, 186);
 }
 
 body {	
