@@ -52,7 +52,7 @@
 	
 	</head>
 	
-	<body>
+	<body class="dark">
 	  <script>
     ;(function() {
     
@@ -80,10 +80,17 @@
 		window.__setPreferredTheme(
         preferredTheme || (darkQuery.matches ? "dark" : "light")
     	)
+    	
+    	document.querySelector("#toggle").addEventListener("click", () => {
+  window.__setPreferredTheme(
+    document.body.className === "light" ? "dark" : "light"
+  )
+})
   </script>
 		<div class="container">
 		<div id="title">
 				Zheng Shen<!--span style="font-family:'HelveticaNeue-UltraLight'; float:right; font-size:23px;">Linguistics student at UConn</!span-->
+				<span ><button id="toggle">Theme</button></span>
 				<br>
 		</div>
 		<div id="menu">
@@ -93,7 +100,6 @@
 		<li class="page_item page-item-3 "><a href="papers.html">Papers</a></li>
 		<li class="page_item page-item-4"><a href="presentations.html">Presentations</a></li>
 		<li class="page_item page-item-5"><a href="teaching.html">Teaching</a></li>
-		<li ><button id="toggle">Toggle theme</button></li>
 		<!--li class="page_item page-item-6"><a href="cv.html">CV</a></li-->
 		</ul>
 		</div>	

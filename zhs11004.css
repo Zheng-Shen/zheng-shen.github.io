@@ -3,11 +3,10 @@
 a:hover {text-decoration:underline;}   /* mouse over link */
 a:active {text-decoration:underline;}  /* selected link */
 
-a	{
+a{
 	text-decoration:none;
 	color: var(--link);
 }
-
 
 hr {
 	color:#444444;
@@ -31,7 +30,7 @@ body {
   	background-color: var(--bg);
   	color: var(--text);
 	letter-spacing: 0.05em;
-	background-color: rgb(255, 255, 255);
+/*	background-color: rgb(255, 255, 255);*/
 	font-family:'HelveticaNeue-Light', "Helvetica Neue Light", "Helvetica Neue", 'Helvetica-light', Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 300;
 	padding:30px;
