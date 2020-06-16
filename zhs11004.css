@@ -14,6 +14,36 @@ hr {
 	vertical-align: top;
 }
 
+
+li{
+    margin-top: 1.5px;
+}
+
+li:first-child {
+    margin-top:0;
+}
+
+body.huang {
+	--bg: rgb(255,225,190);
+	--text: rgb(51,51,51);
+	--link: rgb(15, 93, 189);
+	--menulink: #3a3a3a
+}
+
+body.lan {
+	--bg: #0f4c81;
+	--text: rgb(200, 200, 200);
+	--link: rgb(103, 151, 105);
+
+}
+
+body.lv {
+	--bg: rgb(243,243,243);
+	--text: rgb(51,51,51);
+	--link: #67832e;
+}
+
+
 body.light {
 	--bg: rgb(255, 243, 241);
 	--text: rgb(51,51,51);
@@ -50,7 +80,8 @@ body {
 	left: 50%;
 	text-align: left;
 	text-align: justify;
-	padding: 20px;
+	top:-2%;
+	padding: 5em;
 	max-width: 40em;
 	min-width: 40em;
 	transform: translate(-50%, 0%);
@@ -95,6 +126,7 @@ table, th, td {
 	width:inherit;
 	margin-top: 15px;
 	padding: 6px 0 0;
+
 }
 
 #menu ul{
@@ -112,10 +144,10 @@ table, th, td {
 	text-transform: uppercase;
 	display:inline-block;
 	float:center;
-	font-size: 0.85em;
+	font-size: 0.9em;
 	margin-right: 5px;
 	margin-left: 5px;
-	letter-spacing: 0em;
+	letter-spacing: 0.1em;
 	float:center;
 	width: inherit;
 	text-align:center;
