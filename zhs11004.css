@@ -37,6 +37,7 @@ body {
 	padding:30px;
 	height: 100%;
 	line-height: 1.5;
+	font-size: 20;
 }
 
 .bigcontainer{
@@ -49,14 +50,14 @@ body {
 	text-align: left;
 	text-align: justify;
 	padding: 20px;
-	max-width: 35em;
-	min-width: 35em;
+	max-width: 40em;
+	min-width: 40em;
 	transform: translate(-50%, 0%);
 }
 
 #title {
 	letter-spacing: 0.1em;
-	font-size: 36px;
+	font-size: 2.5em;
 	font-family: 'HelveticaNeue-UltraLight', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica-light', 'Helvetica', Arial, Lucida Grande, sans-serif;
 	text-align: center;
 }
@@ -78,6 +79,7 @@ vertical-align: text-top;
 table, th, td {
     border-collapse: collapse;
 	width: inherit;
+	font-size: 1em;
 }
 
 
@@ -88,7 +90,7 @@ table, th, td {
 	height:2em;
 	clear:both;
 	padding-top:1em;
-	font-size:em;
+	font-size:1em;
 	width:inherit;
 	margin-top: 15px;
 	padding: 6px 0 0;
