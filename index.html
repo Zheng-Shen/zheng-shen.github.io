@@ -4,11 +4,6 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125955770-1"></script>
 
-<script>
-document.querySelector("#toggle").addEventListener("click", () => {
-  window.__setPreferredTheme(
-    document.body.className === "light" ? "dark" : "light")
-</script>	
 
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -59,15 +54,15 @@ document.querySelector("#toggle").addEventListener("click", () => {
 	
 	</head>
 	
-	<body class="dark">
+	<body class="light">
 	  <script>
 		;(function() {
-			let preferredTheme
+		let preferredTheme
 			
 			try {
 				preferredTheme = localStorage.getItem("theme")
 			} catch (err) {}
-    
+
 			window.__setPreferredTheme = function(newTheme) {
 				window.__theme = newTheme
 				document.body.className = newTheme
@@ -87,7 +82,11 @@ document.querySelector("#toggle").addEventListener("click", () => {
         preferredTheme || (darkQuery.matches ? "dark" : "light")
     	)
 	})
-  </script>
+	
+  	</script>
+  	
+
+  
 		<div class="container">
 		<div id="title">
 				Zheng Shen<!--span style="font-family:'HelveticaNeue-UltraLight'; float:right; font-size:23px;">Linguistics student at UConn</!span-->
@@ -132,11 +131,20 @@ My other projects investigate <b>fragment answers</b>, where I use different int
 			
 		<hr size="1"> 
 		<div id="contact">
-		Contact: <a href="mailto:zhengshen522@gmail.com" class="email" style="font-size:15px">Email</a> 
-				| Office: Block AS5 #05-32, 7 Arts Link, Singapore | <label class="switch">
+		Contact: <a href="mailto:zhengshen522@gmail.com" class="email" style="font-size:1em">Email</a>   
+				  |   Office: Block AS5 #05-32, 7 Arts Link, Singapore | <label class="switch">
   <input type="checkbox", id="toggle">
   <span class="slider round"></span>
 </label>
+
+<script>
+document.querySelector("toggle").addEventListener("click", () => {
+  window.__setPreferredTheme(
+    document.body.className === "light" ? "dark" : "dark"
+  )
+})
+</script>
+
 		</div>
 		<!--| <a href="https://uconn.academia.edu/ZhengShen" target="_blank">Academia.edu</a--> 
 
