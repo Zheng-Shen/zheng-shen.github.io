@@ -4,7 +4,6 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125955770-1"></script>
 
-
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -51,42 +50,65 @@
 		}
 //-->
 </script>
-	
+
+<script>
+//theme switch from https://uglyduck.ca/quick-dirty-theme-switcher/
+// Set a given theme/color-scheme
+function setTheme(themeName) {
+    localStorage.setItem('theme', themeName);
+    document.documentElement.className = themeName;
+}
+
+// Toggle between color themes
+function toggleLightTheme() {
+    if (localStorage.getItem('theme') !== 'theme-light'){
+        setTheme('theme-light');
+    }
+}
+function toggleDarkTheme() {
+    if (localStorage.getItem('theme') !== 'theme-dark'){
+        setTheme('theme-dark');
+    }
+}
+function toggleLvTheme() {
+    if (localStorage.getItem('theme') !== 'theme-lv'){
+        setTheme('theme-lv');
+    }
+}
+function toggleLanTheme() {
+    if (localStorage.getItem('theme') !== 'theme-lan'){
+        setTheme('theme-lan');
+    }
+}
+function toggleHuangTheme() {
+    if (localStorage.getItem('theme') !== 'theme-huang'){
+        setTheme('theme-huang');
+    }
+}
+
+// Immediately set the theme on initial load
+(function () {
+    if (localStorage.getItem('theme') === 'theme-light') {
+        setTheme('theme-light');
+    }
+    if (localStorage.getItem('theme') === 'theme-dark') {
+        setTheme('theme-dark');
+    }
+    if (localStorage.getItem('theme') === 'theme-lv') {
+        setTheme('theme-lv');
+    }
+    if (localStorage.getItem('theme') === 'theme-lan') {
+        setTheme('theme-lan');
+    }
+    if (localStorage.getItem('theme') === 'theme-huang') {
+        setTheme('theme-huang');
+    }
+})();
+	</script>
+
 	</head>
 	
 	<body class="light">
-	  <script>
-		;(function() {
-		let preferredTheme
-			
-			try {
-				preferredTheme = localStorage.getItem("theme")
-			} catch (err) {}
-
-			window.__setPreferredTheme = function(newTheme) {
-				window.__theme = newTheme
-				document.body.className = newTheme
-        
-				try {
-					localStorage.setItem("theme", newTheme)
-				} catch (err) {}
-			}
-
-      let darkQuery = window.matchMedia("(prefers-color-scheme: dark)")
-
-      darkQuery.addListener(function(e) {
-        window.__setPreferredTheme(e.matches ? "dark" : "light")
-      	})
-
-		window.__setPreferredTheme(
-        preferredTheme || (darkQuery.matches ? "dark" : "light")
-    	)
-	})
-	
-  	</script>
-  	
-
-  
 		<div class="container">
 		<div id="title">
 			Zheng Shen 
@@ -96,10 +118,6 @@
  <!--span style="font-family:'HelveticaNeue-UltraLight'; float:right; font-size:23px;">Linguistics student at UConn</!span-->
 				<!--span ><button id="toggle">Theme</button></!span-->
 				<br>
-				<!--span style="display:inline-block; width:40px">申</span>
-
-				<span style="display:inline-block; width:25px">正</span-->
-				
 		</div>
 		<div id="menu">
 		<ul>
@@ -148,9 +166,19 @@ My other projects investigate <b>fragment answers</b>, where I use different int
 		<br>			
 		<hr size="1"> 
 		<div id="contact">
-		Contact: <a href="mailto:zhengshen522@gmail.com" class="email" style="font-size:1em">email</a>  
-		<span style="display:inline-block; width: 8.8em;"></span>
+		Contact: <a href="mailto:zhengshen522@gmail.com" class="email" style="font-size:1em">email</a>  	
+
+		<span style="display:inline-block; width: 1.25em;"></span>
 		 Office: Block AS5 #05-32, 7 Arts Link, Singapore 
+		 		<span style="display:inline-block; width: 1.25em;"></span>
+		<span class="color-select">
+		    <button onclick="toggleLightTheme()"></button>
+   			<button onclick="toggleDarkTheme()"></button>
+    		<button onclick="toggleLvTheme()"></button>
+    		<!--button onclick="toggleLanTheme()"></button-->
+			<button onclick="toggleHuangTheme()"></button>
+		</span>
+
 		
 <!-- the dark/light theme toggle -->
 		

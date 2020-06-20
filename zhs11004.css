@@ -14,7 +14,6 @@ hr {
 	vertical-align: top;
 }
 
-
 li{
     margin-top: 1.5px;
 }
@@ -23,45 +22,64 @@ li:first-child {
     margin-top:0;
 }
 
-body.huang {
+.theme-light {
+   --bg: rgb(255, 243, 241);
+   --text: rgb(51,51,51);
+   --link: rgb(15, 93, 189);
+   --menulink: #3a3a3a;
+}
+
+.theme-dark {
+	--bg: rgb(36,36,36);
+	--text: rgb(200, 200, 200);
+	--link: rgb(128, 154, 186);
+}
+
+.theme-lv {
+    --bg: rgb(243,243,243);
+    --text: rgb(51,51,51);
+   	--link: #67832e;
+}
+
+.theme-lan {
+	--bg: #0f4c81;
+	--text: rgb(255,225,190);
+	--link: rgb(103, 151, 105);
+}
+
+.theme-huang {
 	--bg: rgb(255,225,190);
 	--text: rgb(51,51,51);
 	--link: rgb(15, 93, 189);
 	--menulink: #3a3a3a
 }
 
-body.lan {
-	--bg: #0f4c81;
-	--text: rgb(200, 200, 200);
-	--link: rgb(103, 151, 105);
-
+.color-select button {
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid;
+    border-radius: 9999px;
+    cursor: pointer;
+    height: 20px;
+    margin: 0 0.26rem 0.8rem 0;
+    outline: 0;
+    width: 20px;
 }
 
-body.lv {
-	--bg: rgb(243,243,243);
-	--text: rgb(51,51,51);
-	--link: #67832e;
-}
-
-
-body.light {
-	--bg: rgb(255, 243, 241);
-	--text: rgb(51,51,51);
-	--link: rgb(15, 93, 189);
-	--menulink: #3a3a3a
-}
-
-body.dark {
-	--bg: rgb(36,36,36);
-	--text: rgb(200, 200, 200);
-	--link: rgb(128, 154, 186);
-}
+/* Style each swatch to match the corresponding theme */
+.color-select button:nth-child(1) { background: rgb(255, 243, 241); border-color: rgb(51,51,51); }
+.color-select button:nth-child(2) { background: rgb(36,36,36); border-color: rgb(200,200,200); }
+.color-select button:nth-child(3) { background: rgb(243,243,243); border-color: rgb(120,131,98); }
+/*.color-select button:nth-child(4) { background: #0f4c81; border-color: rgb(255,225,190); }*/
+.color-select button:nth-child(4) { background: rgb(255,225,190); border-color: rgb(51,51,51); }
 
 body {	
-  	background-color: var(--bg);
-  	color: var(--text);
-	letter-spacing: 0.05em;
+    background-color: var(--bg);
+    color: var(--text);
+/*  background-color: var(--bg);
+/*  color: var(--text);
 /*	background-color: rgb(255, 255, 255);*/
+	letter-spacing: 0.05em;
 	font-family:'HelveticaNeue-Light', "Helvetica Neue Light", "Helvetica Neue", 'Helvetica-light', Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 300;
 	padding:30px;
@@ -70,7 +88,6 @@ body {
 	font-size: 20;
 }
 
-
 .bigcontainer{
 	position: relative;
 }
@@ -78,7 +95,7 @@ body {
 .container {
 	position: absolute;
 	left: 50%;
-	text-align: left;
+	/*text-align: left;*/
 	text-align: justify;
 	top:-2%;
 	padding: 5em;
@@ -113,7 +130,6 @@ table, th, td {
 	width: inherit;
 	font-size: 1em;
 }
-
 
 #menu {
 	display: block;
