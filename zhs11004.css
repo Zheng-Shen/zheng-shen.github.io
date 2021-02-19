@@ -62,10 +62,10 @@ li:first-child {
     border: 2px solid;
     border-radius: 9999px;
     cursor: pointer;
-    height: 20px;
+    height: 18px;
     margin: 0 0.26rem 0.8rem 0;
     outline: 0;
-    width: 20px;
+    width: 18px;
 }
 
 /* Style each swatch to match the corresponding theme */
