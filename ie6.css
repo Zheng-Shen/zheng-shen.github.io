@@ -17,26 +17,190 @@ Description...
 			
 @version:       $Revision:$
 */
+/*a:link {text-decoration:none;color:rgb(0,47,167)}    /* unvisited link */
+/*a:visited {text-decoration:none;color:rgb(0,47,167)} /* visited link */
+a:hover {text-decoration:underline;}   /* mouse over link */
+a:active {text-decoration:underline;}  /* selected link */
 
- #container {
-	height: 100%;
-	max-width: 50em;
-	min-width: 50em;
+a{
+	text-decoration:none;
+	color: var(--link);
 }
 
-#title {
-	letter-spacing: 0.1em;
-	font-size: 2.5em;
-	font-family: 'HelveticaNeue-UltraLight', 'HelveticaNeue-Light', 'Helvetica Neue Light';
-	text-align: center;
+hr {
+	color:#444444;
+	text-align: right;
+	vertical-align: top;
 }
 
-body {
+li{
+    margin-top: 1.5px;
+    text-align: left;
+
+}
+
+li:first-child {
+    margin-top:0;
+}
+
+.theme-light {
+   --bg: rgb(255, 243, 241);
+   --text: rgb(51,51,51);
+   --link: rgb(15, 93, 189);
+   --menulink: #3a3a3a;
+}
+
+.theme-dark {
+	--bg: rgb(36,36,36);
+	--text: rgb(200, 200, 200);
+	--link: rgb(128, 154, 186);
+}
+
+.theme-lv {
+    --bg: rgb(243,243,243);
+    --text: rgb(51,51,51);
+   	--link: #647b36;
+}
+
+.theme-lan {
+	--bg: #0f4c81;
+	--text: rgb(255,225,190);
+	--link: rgb(103, 151, 105);
+}
+
+.theme-huang {
+	--bg: rgb(255,225,190);
+	--text: rgb(51,51,51);
+	--link: rgb(15, 93, 189);
+	--menulink: #3a3a3a
+}
+
+.color-select button {
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid;
+    border-radius: 9999px;
+    cursor: pointer;
+    height: 18px;
+    margin: 0 0.26rem 0.8rem 0;
+    outline: 0;
+    width: 18px;
+}
+
+/* Style each swatch to match the corresponding theme */
+.color-select button:nth-child(1) { background: rgb(255, 243, 241); border-color: rgb(51,51,51); }
+.color-select button:nth-child(2) { background: rgb(36,36,36); border-color: rgb(200,200,200); }
+.color-select button:nth-child(3) { background: rgb(243,243,243); border-color: rgb(120,131,98); }
+/*.color-select button:nth-child(4) { background: #0f4c81; border-color: rgb(255,225,190); }*/
+.color-select button:nth-child(4) { background: rgb(255,225,190); border-color: rgb(51,51,51); }
+
+body {	
+    background-color: var(--bg);
+    color: var(--text);
+/*  background-color: var(--bg);
+/*  color: var(--text);
+/*	background-color: rgb(255, 255, 255);*/
 	letter-spacing: 0.05em;
-	font-family:'HelveticaNeue-Light', "Helvetica Neue Light", "Helvetica Neue", 'Helvetica-light', 'Helvetica, Arial', 'Lucida Grande', 'sans-serif';
+	font-family:'HelveticaNeue-Light', "Helvetica Neue Light", "Helvetica Neue", 'Helvetica-light', Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 300;
 	padding:30px;
 	height: 100%;
 	line-height: 1.5;
 	font-size: 20;
+}
+
+.bigcontainer{
+	position: relative;
+}
+
+.container {
+	position: absolute;
+	left: 50%;
+	/*text-align: left;*/
+	text-align: justify;
+	top:-2%;
+	padding: 5em;
+	max-width: 40em;
+	min-width: 40em;
+	transform: translate(-50%, 0%);
+}
+
+#title {
+	letter-spacing: 0.1em;
+	font-size: 2.5em;
+	font-family: 'HelveticaNeue-UltraLight', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica-light', 'Helvetica', Arial, Lucida Grande, sans-serif;
+	/*text-align: center;*/
+	text-align: center;
+}
+
+#lingx {
+	font-size: 15px;
+}
+
+.current_page_item{
+font-weight: bold
+}
+
+th, td {
+padding: 2px;
+padding-bottom: 1em;
+vertical-align: text-top;
+}
+
+table, th, td {
+    border-collapse: collapse;
+	width: inherit;
+	font-size: 1em;
+	font-family:'HelveticaNeue-Light', "Helvetica Neue Light", "Helvetica Neue", 'Helvetica-light', Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+}
+
+#menu {
+	display: block;
+	text-align: center;
+	position: relative;
+	height:2em;
+	clear:both;
+	padding-top:1em;
+	font-size:1em;
+	width:inherit;
+	margin-top: 15px;
+	padding: 6px 0 0;
+
+}
+
+#menu ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	margin: 0 auto;
+	text-align: center;
+	list-style:none;
+}
+
+#menu li {
+	text-align:center;
+	width: inherit;
+	text-transform: uppercase;
+	display:inline-block;
+	float:center;
+	font-size: 0.9em;
+	margin-right: 5px;
+	margin-left: 5px;
+	letter-spacing: 0.1em;
+	float:center;
+	width: inherit;
+	text-align:center;
+}
+
+#menu a {
+	color:var(--menulink);
+	white-space: nowrap;
+}
+
+.news {
+  /*width: 300px;*/
+  border: 1px solid green;
+  padding: 20px;
+  margin: 10px;
 }

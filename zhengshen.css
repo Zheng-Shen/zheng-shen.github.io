@@ -17,6 +17,7 @@ hr {
 li{
     margin-top: 1.5px;
     text-align: left;
+
 }
 
 li:first-child {
@@ -61,10 +62,10 @@ li:first-child {
     border: 2px solid;
     border-radius: 9999px;
     cursor: pointer;
-    height: 20px;
+    height: 18px;
     margin: 0 0.26rem 0.8rem 0;
     outline: 0;
-    width: 20px;
+    width: 18px;
 }
 
 /* Style each swatch to match the corresponding theme */
@@ -109,6 +110,7 @@ body {
 	letter-spacing: 0.1em;
 	font-size: 2.5em;
 	font-family: 'HelveticaNeue-UltraLight', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica-light', 'Helvetica', Arial, Lucida Grande, sans-serif;
+	/*text-align: center;*/
 	text-align: center;
 }
 
@@ -130,13 +132,13 @@ table, th, td {
     border-collapse: collapse;
 	width: inherit;
 	font-size: 1em;
-   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   font-weight: 300;
+	font-family:'HelveticaNeue-Light', "Helvetica Neue Light", "Helvetica Neue", 'Helvetica-light', Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
 }
 
 #menu {
 	display: block;
-	text-align:center;
+	text-align: center;
 	position: relative;
 	height:2em;
 	clear:both;
@@ -178,8 +180,8 @@ table, th, td {
 }
 
 .news {
-  width: 300px;
-  border: 15px solid green;
-  padding: 50px;
-  margin: 20px;
+  /*width: 300px;*/
+  border: 1px solid green;
+  padding: 20px;
+  margin: 10px;
 }
