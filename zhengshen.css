@@ -176,3 +176,10 @@ table, th, td {
 	color:var(--menulink);
 	white-space: nowrap;
 }
+
+.news {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
