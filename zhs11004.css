@@ -114,6 +114,14 @@ body {
 	text-align: center;
 }
 
+#singsum {
+	letter-spacing: 0.1em;
+	font-size: 32px;
+	font-family: 'HelveticaNeue-UltraLight', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica-light', 'Helvetica', Arial, Lucida Grande, sans-serif;
+	/*text-align: center;*/
+	text-align: center;
+}
+
 #lingx {
 	font-size: 15px;
 }
