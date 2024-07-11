@@ -185,3 +185,16 @@ table, th, td {
   padding: 20px;
   margin: 10px;
 }
+
+
+.image-hover {
+    width: 100%; /* Specify the width */
+    height: 200px; /* Specify the height */
+    background-image: "singsum2024/singsum2024photo.JPG"; /* Initial background image */
+    background-size: cover; /* Cover the entire area of the element */
+    transition: background-image 0.5s ease-in-out; /* Smooth transition */
+}
+
+.image-hover:hover {
+    background-image: url('singsum2024/singsum2024photo2.jpeg'); /* Change on hover */
+]
