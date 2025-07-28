@@ -107,6 +107,44 @@ function toggleHuangTheme() {
 })();
 	</script>
 
+<style>
+
+    .imageBox {
+      position: relative;
+      float: left;
+    }
+
+    .imageBox .hoverImg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: none;
+    }
+
+    .imageBox:hover .hoverImg {
+      display: block;
+    }
+
+    .imageBox:hover .hoverImg {
+        display: block;
+    }
+
+</style>
+
+  <style>
+    .container2 {
+      display: flex;
+      align-items: center; /* vertically center the items */
+      gap: 20px; /* spacing between image and text */
+    }
+    .container2 img {
+      width: auto;
+      height: 200px;
+      border-radius: 8px; /* optional: rounded corners */
+    }
+  </style>
+
+
 	</head>
 	
 	<body class="light">
@@ -133,35 +171,51 @@ function toggleHuangTheme() {
 		</div>	
 		
 		<div id="about">
-		<br>
+<br>
+
+<div style="display: flex; height=200px; gap: 20px; width: auto; align-items: center; ">
+  <div class="imageBox" style="flex:1; padding: 0px; align-items: center; ">
+      <!--div class="imageInn">
+    	<span style="display:inline-block; height: 0em;"></span-->
+        <img src="profile/normal.jpg" alt="Default Image" style="height:205px;
+ border-radius: 8px;" >
+      <!--span style="display:inline-block; height: 0em;"></span>
+      </div-->
+      <!--div class="hoverImg" style="flex: 1; padding: 0px; align-items: center; ">
+       <!--span style="display:inline-block; height: 0em;"></span>
+        <img src="profile/not.jpg" alt="Profile Image"   style="height:205px;
+border-radius: 8px;">
+    	<!--span style="display:inline-block; height: 0em;"></span>
+      </div-->
+    </div>
+  <div style="flex: 3; padding: 0px; height=190px">
+	I'm an Assistant Professor at the <a href="https://fass.nus.edu.sg/elts/" target="_blank">Department of English, Linguistics and Theatre Studies</a>, <a href="https://www.nus.edu.sg/" target="_blank">National University of Singapore</a>.
+	<br><br>
+	I'm a linguist who works toward deepening our understanding of human linguistic capacity with cross-linguistic data collected using different methods. 
+  </div>
+</div>
+
+
+<!--div class="container2">
+        <img src="profile/normal.jpg" alt="Default Image">
+
+		<p>
 		I'm an Assistant Professor at the <a href="https://fass.nus.edu.sg/elts/" target="_blank">Department of English, Linguistics and Theatre Studies</a>, <a href="https://www.nus.edu.sg/" target="_blank">National University of Singapore</a>.
-		<br>
-		<br>
+		<br><br>
+		I'm a linguist who works toward deepening our understanding of human linguistic capacity with cross-linguistic data collected using different methods. 
+</p>
+</div-->
 
 
-I'm a linguist who works toward deepening our understanding of human linguistic capacity with cross-linguistic data collected using different methods. 
-<br>
-<br>
-I work 
-<br>
-<b>on</b> filler-gap dependency, multi-valuation, agreement with con/disjunction;
-<br>
-<b>in</b> English, Singlish, Chinese, Germanic languages, Slavic languages; 
-<br>
-<b>with</b>
-acceptability judgment, truth value judgment, forced choice, self-paced reading, Rapid Serial Visual Presentation.
-
-<br><br>
-Current team: <a href="https://bethchf.github.io/" target="_blank">Beth Chan</a> (Research assistant)
+<p style="padding-left: 65px; text-indent: -65px;">I work <b>on</b> filler-gap dependency, multi-valuation, agreement with con/disjunction;<br>
+	<b>in</b> English, Singlish, Chinese, Germanic languages, Slavic languages;<br>
+	<b>with</b> acceptability judgment, truth value judgment, forced choice, self-paced reading, Rapid Serial Visual Presentation.</p>
+		
+<p>Current team: <a href="https://bethchf.github.io/" target="_blank">Beth Chan</a> (Research assistant)</p>
 
 <!--a href="https://sites.google.com/view/mhyoo" target="_blank">Myung Hye Yoo</a> (postdoc);--> 
-<br><br>
-Here is my	<a href="CV_Shen.pdf" target="_blank">CV</a> as of Jul. 2025. Also, you may find <a href="http://lingalert.com" target="_blank">Ling Alert</a> helpful.
 
-<br>
-<br>
-
-
+<p>Here is my	<a href="CV_Shen.pdf" target="_blank">CV</a> as of Jul. 2025. Also, you may find <a href="http://lingalert.com" target="_blank">Ling Alert</a> helpful.</p>
 
 <div class="news">
 
@@ -200,6 +254,8 @@ Agreement: Syntactic, Semantic, Psycholinguistic perspectives.
 </ul>
 <!--a href="news.html";>more</a-->
 </div>
+
+
 
 <!--
 Broadly, my research interests lie in syntax and its interfaces with semantics and morphology. One of my current projects looks into various aspects of <b>multi-valuation</b> where one probe agreeing with multiple goals, thus receiving multiple values. This type of phenomena contribute to theoretical questions regarding typology of agreement, phi feature structure, and mechanisms behind closest conjunct agreement.
