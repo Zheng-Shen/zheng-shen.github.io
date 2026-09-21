@@ -5,11 +5,11 @@ date: 2019-11-04
 ---
 
 
-# What does a judgment mean?[](#what-does-a-judgment-mean)
+# What does a judgment mean?(#what-does-a-judgment-mean)
 
-## Zheng Shen[](#zheng-shen)
+## Zheng Shen(#zheng-shen)
 
-### 2019-11-4[](#2019-11-4)
+### 2019-11-4(#2019-11-4)
 
 This essay discusses the relation between a judgment and our interpretation of the judgment. In other words, we ask a participant about a sentence, the participant will give us a response, how do/can/should we (not) interpret that response in terms of acceptability?
 
@@ -21,11 +21,11 @@ In order to achieve that we need to know which sentences are acceptable and whic
 
 OK here we go.
 
-## 1. Individual sentences[](#1-individual-sentences)
+## 1. Individual sentences(#1-individual-sentences)
 
 If you ask a person to judge an individual sentence on either a two point (yes-no) or multiple point (3,5,7) scale, you will get a response x. What does x mean?
 
-### Ambiguity of small scales[](#ambiguity-of-small-scales)
+### Ambiguity of small scales(#ambiguity-of-small-scales)
 
 **End points on large scales are the best, but they are rare.**
 
@@ -33,13 +33,13 @@ In some extreme cases where a sentence will get a 7 or 1, the relation between t
 
 The problem outlined above is sort of a first-world problem in the world of judgments. It can be solved in principle by always using a scale with many points. But that would only work if we live a world where every sentence is clearly a 1 or a 7. The fact is we rarely get 7 or 1 for our test sentences. Most of the judgments are somewhere in between. In this actual world, having too many points would make the numbers between end points meaningless. What would there be a difference between 3 and 10 on a 100 point scale?
 
-### The muddy middle ground[](#the-muddy-middle-ground)
+### The muddy middle ground(#the-muddy-middle-ground)
 
 **If a sentence is judged as in the middle of the scale, it is doomed.**
 
 Another more discussed problem occurs when the judgment is in the middle of the scale like 4 on a 7 point scale or a 3 on a 5 point scale. Some assume that when participants are not sure (possible grammatical gap), they would choose the middle point. That’s why some researchers use scale with even points to make sure there is no middle point (e.g. 6). But I don’t know how truly effective that is. Yes, you will have a number to work with, but that doesn’t mean it’s showing what you set out for it to show. Maybe the participants genuinely wanted to choose the middle point.
 
-### Root of the problem: linking hypothesis[](#root-of-the-problem-linking-hypothesis)
+### Root of the problem: linking hypothesis(#root-of-the-problem-linking-hypothesis)
 
 **We really don’t know what’s good and what’s bad.**
 
@@ -67,7 +67,7 @@ But until then, I would take statements in the shape of ‘The average rating fo
 
 Footnote: This last problem in section 1 is the worst in the minimalist program where sentences are assumed to be either generatable or “*crashes*”. Back in the GB and move alpha days, constraint based analyses are somehow milder and things are not as black and white. If sentence A violates some rule, it’s degraded. If it violates more rules, it’s even worse. In this framework, there is no magical cutoff point, which is why minimal pairs play a crucial role as is discussed in the next part.
 
-## 2. Minimal pairs[](#2-minimal-pairs)
+## 2. Minimal pairs(#2-minimal-pairs)
 
 OK let’s take a breath.
 
