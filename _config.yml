@@ -1,20 +1,11 @@
 # Site settings
-title: Z's blog
-description: >- # this means to ignore newlines until "baseurl:"
-  Z's personal website
-baseurl: "" # the subpath of your site, e.g. /blog — leave empty if none
-url: "https://zheng-shen.github.io/" # the base hostname & protocol, e.g. https://yourusername.github.io
+title: Zheng Shen
+url: "https://zheng-shen.github.io"
+baseurl: ""
 
 # Build settings
 markdown: kramdown
-theme: minima # remove this line if you're writing your own layouts instead
 
-# Optional: shows up in minima's footer/header if you use that theme
-author: Z
-# github_username: yourusername
-
-# Exclude files from being processed/published by Jekyll
+# Keep non-Jekyll files (Gemfile etc.) out of the published site, if you add any
 exclude:
   - README.md
-  - Gemfile
-  - Gemfile.lock

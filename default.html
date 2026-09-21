@@ -1,28 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
+<html class="theme-light">
+
 <head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }}{% if page.title %} | {% endif %}{{ site.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125955770-1"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125955770-1');
+</script>
+
+	<title>{{ page.title }}{% if page.title %} | {% endif %}Zheng Shen</title>
+	<link rel="stylesheet" type="text/css" href="{{ '/zhs11004.css' | relative_url }}">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="Zheng Shen, Zheng, linguistics, linguist, goethe university frankfurt, uconn">
+	<meta name="descripition" content="Zheng Shen">
+	<meta name="author" content="Zheng Shen">
+
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39271824-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+	</script>
+
+	<script>
+	//theme switch from https://uglyduck.ca/quick-dirty-theme-switcher/
+	function setTheme(themeName) {
+	    localStorage.setItem('theme', themeName);
+	    document.documentElement.className = themeName;
+	}
+	function toggleLightTheme() {
+	    if (localStorage.getItem('theme') !== 'theme-light'){ setTheme('theme-light'); }
+	}
+	function toggleDarkTheme() {
+	    if (localStorage.getItem('theme') !== 'theme-dark'){ setTheme('theme-dark'); }
+	}
+	function toggleLvTheme() {
+	    if (localStorage.getItem('theme') !== 'theme-lv'){ setTheme('theme-lv'); }
+	}
+	function toggleHuangTheme() {
+	    if (localStorage.getItem('theme') !== 'theme-huang'){ setTheme('theme-huang'); }
+	}
+	(function () {
+	    var t = localStorage.getItem('theme');
+	    if (t) { setTheme(t); }
+	})();
+	</script>
+
 </head>
-<body>
 
-  <header>
-    <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
-    <nav>
-      <a href="{{ '/' | relative_url }}">Home</a>
-      <a href="{{ '/blog/' | relative_url }}">Blog</a>
-    </nav>
-  </header>
+<body class="light">
+	<div class="container">
+	<div id="title">
+		Zheng Shen
+		申正
+		<br>
+	</div>
+	<div id="menu">
+	<ul>
+	<li class="page_item page-item-1{% if page.url == '/' or page.url == '/index.html' %} current_page_item{% endif %}"><a href="{{ '/' | relative_url }}">About</a></li>
+	<li class="page_item page-item-2"><a href="{{ '/projects.html' | relative_url }}">Projects</a></li>
+	<li class="page_item page-item-3"><a href="{{ '/papers.html' | relative_url }}">Papers</a></li>
+	<li class="page_item page-item-4"><a href="{{ '/presentations.html' | relative_url }}">Presentations</a></li>
+	<li class="page_item page-item-5"><a href="{{ '/teaching.html' | relative_url }}">Teaching</a></li>
+	<li class="page_item page-item-6{% if page.url contains '/blog' %} current_page_item{% endif %}"><a href="{{ '/blog.html' | relative_url }}">Blog</a></li>
+	</ul>
+	</div>
 
-  <main>
-    {{ content }}
-  </main>
+	<div id="about">
+	<br>
 
-  <footer>
-    <p>&copy; {{ site.time | date: "%Y" }} {{ site.author | default: site.title }}</p>
-  </footer>
+	{{ content }}
+
+	<br>
+	<br>
+	<hr size="1">
+	<div id="contact">
+	Contact: <a href="mailto:zhengshen522@gmail.com" class="email" style="font-size:1em">email</a>
+
+	<span style="display:inline-block; width: 1.25em;"></span>
+	 Office: Block AS5 #05-32, 7 Arts Link, Singapore
+	 		<span style="display:inline-block; width: 1.25em;"></span>
+	<span class="color-select">
+	    <button onclick="toggleLightTheme()"></button>
+   		<button onclick="toggleDarkTheme()"></button>
+    	<button onclick="toggleLvTheme()"></button>
+		<button onclick="toggleHuangTheme()"></button>
+	</span>
+	</div>
+	</div>
+	</div>
 
 </body>
+
 </html>

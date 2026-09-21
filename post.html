@@ -2,11 +2,9 @@
 layout: default
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
-  <p class="post-date">{{ page.date | date: "%B %-d, %Y" }}</p>
+<h2 style="font-family:'HelveticaNeue-UltraLight', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica-light', Helvetica, Arial, 'Lucida Grande', sans-serif; letter-spacing: 0.05em; margin-bottom: 0;">{{ page.title }}</h2>
+<p style="font-size: 0.85em; color: var(--text); opacity: 0.7; margin-top: 0.2em;">{{ page.date | date: "%B %-d, %Y" }}</p>
 
-  <div class="post-content">
-    {{ content }}
-  </div>
-</article>
+{{ content }}
+
+<p><a href="{{ '/blog.html' | relative_url }}">&larr; Back to Blog</a></p>
