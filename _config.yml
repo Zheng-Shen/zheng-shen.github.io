@@ -2,7 +2,7 @@
 title: Z's blog
 description: >- # this means to ignore newlines until "baseurl:"
   Z's personal website
-baseurl: "https://zheng-shen.github.io/blog" # the subpath of your site, e.g. /blog — leave empty if none
+baseurl: "" # the subpath of your site, e.g. /blog — leave empty if none
 url: "https://zheng-shen.github.io/" # the base hostname & protocol, e.g. https://yourusername.github.io
 
 # Build settings
