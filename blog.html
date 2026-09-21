@@ -4,19 +4,19 @@ title: Blog
 permalink: /blog/
 ---
 
-<div class="container">
-Posts
-<ul>
-{% for post in site.posts %}
-  <li>{{ post.date | date: "%Y.%-m" }} - <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
+<div class="blog-index">
 
-		<span class="color-select">
-		    <button onclick="toggleLightTheme()"></button>
-   			<button onclick="toggleDarkTheme()"></button>
-    		<button onclick="toggleLvTheme()"></button>
-    		<!--button onclick="toggleLanTheme()"></button-->
-			<button onclick="toggleHuangTheme()"></button>
-		</span>
+<div align="center" style="font-size:1.1em">Blog</div>
+
+<br>
+
+{% for post in site.posts %}
+  <div class="blog-entry">
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <br>
+    <span class="blog-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+  </div>
+  <br>
+{% endfor %}
+
 </div>

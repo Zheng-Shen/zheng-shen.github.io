@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<article class="blog-post">
+
+<div align="center" style="font-size:1.1em">{{ page.title }}</div>
+
+<div class="blog-date" style="text-align:center;">
+  {{ page.date | date: "%Y.%m.%d" }}
+</div>
+
+<br>
+
+{{ content }}
+
+<br>
+
+<a href="{{ '/blog/' | relative_url }}">← Back to Blog</a>
+
+</article>

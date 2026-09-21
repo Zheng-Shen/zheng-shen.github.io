@@ -1,6 +1,7 @@
 # Site settings
 title: Z's blog
 url: "https://zheng-shen.github.io"
+permalink: /blog/:year/:month/:day/:title/
 baseurl: ""
 
 # Build settings
